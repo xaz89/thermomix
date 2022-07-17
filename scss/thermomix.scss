@@ -1,0 +1,280 @@
+/*!
+ * Bootstrap v5.1.3 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
+// scss-docs-start import-stack
+// Configuration
+// @import "../../node_modules/bootstrap-5.1.3/scss/functions";
+@import "../../node_modules/bootstrap-5.1.3/scss/functions";
+
+
+// Default variable overrides
+$body-bg: #ffffff;
+/* $body-color: #111; */
+
+$primary: #47B975;
+$secondary: #2099D8;
+$tercero: #0F6DAD;
+$footer: #043967;
+
+
+
+
+@import "../../node_modules/bootstrap-5.1.3/scss/variables";
+@import "../../node_modules/bootstrap-5.1.3/scss/mixins";
+
+$theme-colors: map-remove($theme-colors, "info", "light", "dark", "success", "warning", "danger");
+
+
+@import "../../node_modules/bootstrap-5.1.3/scss/utilities";
+
+
+
+// Layout & components
+@import "../../node_modules/bootstrap-5.1.3/scss/root";
+@import "../../node_modules/bootstrap-5.1.3/scss/reboot";
+@import "../../node_modules/bootstrap-5.1.3/scss/type";
+@import "../../node_modules/bootstrap-5.1.3/scss/images";
+@import "../../node_modules/bootstrap-5.1.3/scss/containers";
+@import "../../node_modules/bootstrap-5.1.3/scss/grid";
+@import "../../node_modules/bootstrap-5.1.3/scss/tables";
+@import "../../node_modules/bootstrap-5.1.3/scss/forms";
+@import "../../node_modules/bootstrap-5.1.3/scss/buttons";
+@import "../../node_modules/bootstrap-5.1.3/scss/transitions";
+@import "../../node_modules/bootstrap-5.1.3/scss/dropdown";
+@import "../../node_modules/bootstrap-5.1.3/scss/button-group";
+@import "../../node_modules/bootstrap-5.1.3/scss/nav";
+@import "../../node_modules/bootstrap-5.1.3/scss/navbar";
+@import "../../node_modules/bootstrap-5.1.3/scss/card";
+@import "../../node_modules/bootstrap-5.1.3/scss/accordion";
+@import "../../node_modules/bootstrap-5.1.3/scss/breadcrumb";
+@import "../../node_modules/bootstrap-5.1.3/scss/pagination";
+@import "../../node_modules/bootstrap-5.1.3/scss/badge";
+@import "../../node_modules/bootstrap-5.1.3/scss/alert";
+@import "../../node_modules/bootstrap-5.1.3/scss/progress";
+@import "../../node_modules/bootstrap-5.1.3/scss/list-group";
+@import "../../node_modules/bootstrap-5.1.3/scss/close";
+@import "../../node_modules/bootstrap-5.1.3/scss/toasts";
+@import "../../node_modules/bootstrap-5.1.3/scss/modal";
+@import "../../node_modules/bootstrap-5.1.3/scss/tooltip";
+@import "../../node_modules/bootstrap-5.1.3/scss/popover";
+@import "../../node_modules/bootstrap-5.1.3/scss/carousel";
+@import "../../node_modules/bootstrap-5.1.3/scss/spinners";
+@import "../../node_modules/bootstrap-5.1.3/scss/offcanvas";
+@import "../../node_modules/bootstrap-5.1.3/scss/placeholders";
+
+// Helpers
+@import "../../node_modules/bootstrap-5.1.3/scss/helpers";
+
+// Utilities
+@import "../../node_modules/bootstrap-5.1.3/scss/utilities/api";
+// scss-docs-end import-stack
+
+
+
+
+
+@import "./normalize";
+@import "./fonts";
+@import "./colors";
+@import "./mixins";
+@import "./global";
+@import "./scrollbar";
+@import "./selection";
+@import "./form";
+// @import "./button";
+// @import "./theming";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    height: 100%;
+    min-height: 100%;
+}
+body {
+    height: 100%;
+    min-height: 100%;
+}
+
+
+h1, h2, h3, h4, h5, h6, b {
+    font-weight: bold;
+}
+
+header.header{
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    background: #fff;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+    font-size: 14px;
+    .container{
+        height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+}
+b {
+    
+}
+a{
+    text-decoration: none;
+    &:hover{
+        color: rgba($color: $secondary, $alpha: 0.9);
+    }
+}
+
+.login{
+    background-image: url(../img/desktop/img-login1920x1080px@2x.png);
+    background-size: cover;
+    background-position: top center;
+    height: 93vh;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    .card{
+        width: 600px;
+        padding: 60px;
+        @include border-radius(15px);
+    }
+}
+
+.registro{
+    background-image: url(../img/desktop/img-reg1920x1080px@2x.png);
+    background-size: cover;
+    background-position: top center;
+    height: 93vh;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    .card{
+        width: 600px;
+        padding: 60px;
+        @include border-radius(15px);
+    }
+}
+
+footer{
+    height: 7vh;
+}
+
+
+
+.btn {
+    height: 40px;
+    // width: 350px;
+    color: $white;
+    @include border-radius(5px);
+    font-weight: normal;
+    text-transform: uppercase;
+    font: normal normal bold 12px/13px Open Sans;
+    @include box-shadow(0px 5px 10px #00000029);
+    @include center-flex();
+    &:hover, &:active, &:focus{
+        color: rgba($color: $white, $alpha: 0.95);
+    }
+}
+
+.form-floating{
+    .form-control{
+        @include border-radius(0);
+        border: none;
+        border-bottom: 1px solid #c9c9c9;
+        &:focus{
+            @include box-shadow(none);
+            border-color: $primary;
+        }
+
+    }
+}
+
+
+
+
+
+
+@include media-breakpoint-down(sm) { 
+    .login{
+        background-image: url(../img/smartphone/fondo-smartphone.png);
+        .card{
+             width: 300px;
+             padding: 10px;
+             @include border-radius(15px);
+        }
+    }
+    .registro{
+        background-image: url(../img/smartphone/img-reg414px.png);
+        .card{
+             width: 300px;
+             padding: 10px;
+             @include border-radius(15px);
+        }
+    }
+    footer{
+        font-size: 11px;
+    }
+ }
+@include media-breakpoint-up(md) { 
+    .login{
+        background-image: url(../img/tablet/img-login768px.png);
+        .card{
+             width: 450px;
+             padding: 40px;
+             @include border-radius(15px);
+        }
+    }
+    .registro{
+        background-image: url(../img/tablet/img-reg768px.png);
+        .card{
+             width: 450px;
+             padding: 40px;
+             @include border-radius(15px);
+             
+        }
+       
+    }
+ }
+@include media-breakpoint-up(lg) { 
+    .login{
+        background-image: url(../img/desktop/img-login1920x1080px.png);
+    }
+    .registro{
+        background-image: url(../img/desktop/img-reg1920x1080px.png);
+        .card{
+             
+        }
+    }
+ }
+@include media-breakpoint-up(xl) { 
+    .login{
+        background-image: url(../img/desktop/img-login1920x1080px@2x.png);
+    }
+    .registro{
+        background-image: url(../img/desktop/img-reg1920x1080px@2x.png);
+        .card{
+             
+        }
+    }
+ }
+@include media-breakpoint-up(xxl) { 
+    .login{
+        background-image: url(../img/desktop/img-login1920x1080px@2x.png);
+    }
+    .registro{
+        background-image: url(../img/desktop/img-reg1920x1080px@2x.png);
+        .card{
+             
+        }
+    }
+ }

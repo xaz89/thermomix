@@ -1,0 +1,121 @@
+.form__row {
+    margin: 0 0 1.5rem;
+    position: relative;
+}
+
+.form__row:before, .clearfix:before, .section-form__fieldset:before, .form__row:after, .clearfix:after, .section-form__fieldset:after {
+    content: " ";
+    display: table;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    margin: 0 .5rem 0 0;
+}
+
+.form__row--checkbox input, .form__row--radio input {
+    position: absolute;
+    visibility: hidden;
+}
+
+[type="checkbox"], [type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+button, input {
+    overflow: visible;
+}
+
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1;
+    margin: 0;
+}
+
+.form__row input[type="checkbox"]+label {
+    transition: color .3s ease;
+    font-size: 12px;
+
+}
+
+.form__row input[type="checkbox"]+label, .form__row input[type="radio"]+label {
+    padding-left: 2.25rem;
+    color: #34303d;
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: normal;
+    position: relative;
+    cursor: pointer;
+    white-space: inherit;
+    display: inherit;
+}
+
+.form__row:after, .clearfix:after, .section-form__fieldset:after {
+    clear: both;
+}
+
+.form__row:before, .clearfix:before, .section-form__fieldset:before, .form__row:after, .clearfix:after, .section-form__fieldset:after {
+    content: " ";
+    display: table;
+}
+.form__row input[type="checkbox"]+label:before {
+    transition-delay: .1s;
+    transition: background-color .2s ease, border-color .2s ease;
+    border-color: #6e6e6e;
+    border-radius: 3px;
+    background-color: transparent;
+}
+
+.form__row input[type="checkbox"]+label:before, .form__row input[type="checkbox"]+label:after {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.form__row input[type="checkbox"]+label:before, .form__row input[type="radio"]+label:before {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #5d5d62;
+}
+
+.form__row input[type="checkbox"]+label:before, .form__row input[type="checkbox"]+label:after, .form__row input[type="radio"]+label:before, .form__row input[type="radio"]+label:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+}
+
+.form__row input[type="checkbox"]+label:after {
+    content: url(../img/registro/checkbox-selected.svg);
+    margin: 0;
+    transition: background-color .3s ease;
+    background: #34303d;
+    opacity: 0;
+    border-radius: 3px;
+}
+
+
+
+.form__row input[type="checkbox"]+label:before, .form__row input[type="checkbox"]+label:after {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+
+
+.form__row:after, .clearfix:after, .section-form__fieldset:after {
+    clear: both;
+}
+
+.form__row:before, .clearfix:before, .section-form__fieldset:before, .form__row:after, .clearfix:after, .section-form__fieldset:after {
+    content: " ";
+    display: table;
+}
+
+.form__row input[type="checkbox"]:checked+label:after {
+    display: block;
+    opacity: 1;
+    transition: background-color .3s ease;
+    background: #34303d;
+}

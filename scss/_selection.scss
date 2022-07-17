@@ -1,0 +1,9 @@
+::selection {
+    background: transparentize($color: $primary, $amount: 0.5);
+    color: $white;
+}
+
+::-moz-selection {
+    background: transparentize($color: $primary, $amount: 0.5);
+    color: $white;
+}
