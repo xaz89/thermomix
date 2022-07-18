@@ -108,8 +108,32 @@ body {
 
 
 h1, h2, h3, h4, h5, h6, b {
-    font-weight: bold;
+    font-weight: bolder;
 }
+
+
+.home{
+   .hero{
+        background-image: url(../img/desktop/img-banner1920x615px.png);
+    }
+}
+
+.hero{
+    background-size: cover;
+    h1, p{
+        color: #fff;
+        text-shadow: 0 0 1.5em #000;
+        line-height: 1;
+        margin: 0;
+    }
+    h1{
+        font-size: 71px;
+    }
+    p{
+        font-size: 24.3px;
+    }
+}
+
 
 header.header{
     width: 100%;
@@ -153,19 +177,7 @@ header.header{
 }
 
 
-.hero h1, .hero p{
-    color: #fff;
-    text-shadow: 0 0 1.5em #000;
-    font-size: 71px;
-    line-height: 1;
-    margin: 0;
-}
 
-.hero p{
-  color: #fff;
-    text-shadow: 0 0 1.5em #000;
-    font-size: 24.3px;
-}
 .shadow-behind>* {
     position: relative;
     z-index: 1;

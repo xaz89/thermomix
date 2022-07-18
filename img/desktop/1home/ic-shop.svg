@@ -1,0 +1,12 @@
+<svg id="ic-shop" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34.744" height="29.22" viewBox="0 0 34.744 29.22">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_38" data-name="Rectangle 38" width="34.744" height="29.22" fill="#47b975" stroke="#47b975" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Group_33" data-name="Group 33" clip-path="url(#clip-path)">
+    <path id="Path_22199" data-name="Path 22199" d="M165.555,324.8a3.159,3.159,0,1,0,3.159,3.159,3.165,3.165,0,0,0-3.159-3.159m0,5.528a2.369,2.369,0,1,1,2.369-2.369,2.364,2.364,0,0,1-2.369,2.369" transform="translate(-150.945 -301.9)" fill="#47b975" stroke="#47b975" stroke-width="1"/>
+    <path id="Path_22200" data-name="Path 22200" d="M322.355,324.8a3.159,3.159,0,1,0,3.159,3.159,3.165,3.165,0,0,0-3.159-3.159m0,5.528a2.369,2.369,0,1,1,2.369-2.369,2.364,2.364,0,0,1-2.369,2.369" transform="translate(-296.689 -301.9)" fill="#47b975" stroke="#47b975" stroke-width="1"/>
+    <path id="Path_22201" data-name="Path 22201" d="M34.353,3.949H7.07L6.305.308A.407.407,0,0,0,5.923,0H.4A.395.395,0,1,0,.4.79H5.6L9.847,20.817a.417.417,0,0,0,.419.506H30.01a.4.4,0,1,0,0-.79H10.587l-.839-3.949H31.589a.406.406,0,0,0,.383-.308L34.736,4.43a.413.413,0,0,0-.383-.481M32.662,9.872h0L31.28,15.795H9.575L8.489,10.661h0L7.243,4.738H33.859Z" fill="#47b975" stroke="#47b975" stroke-width="1"/>
+  </g>
+</svg>
