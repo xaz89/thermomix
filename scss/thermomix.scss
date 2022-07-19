@@ -120,6 +120,12 @@ h1, h2, h3, h4, h5, h6, b {
     }
 }
 
+.perfil{
+    .hero{
+        background-image: url(../img/desktop/2perfil/img-perfil1920x615px.png);
+    }
+}
+
 .hero{
     background-size: cover;
     h1, p{
@@ -180,7 +186,20 @@ header.header{
     }
 }
 
-
+.referir{
+    code{
+        text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+    }
+    .link{
+        text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 0;
+    }
+}
 
 .shadow-behind>* {
     position: relative;
@@ -227,15 +246,14 @@ section{
             background-color: #ddd;
             background-position: 50%;
             background-size: cover;
-            height: 690px;
-            max-height: 70vh;
+            height: 615px;
             text-align: center;
             margin-bottom: 100px;
             .shadow-behind {
                 // margin-top: -5%;
             }
             .container{
-                height: 100%;
+                height: 615px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -467,6 +485,14 @@ footer{
  }
 
  @include media-breakpoint-only(md) { 
+    section{
+        &.hero{
+            height: 615px;
+            .container{
+                height: 615px;
+            }
+        }
+    }
     .login{
         background-image: url(../img/tablet/img-login768px.png);
         .card{
@@ -541,6 +567,14 @@ footer{
 
 
 @include media-breakpoint-down(sm) { 
+    section{
+        &.hero{
+            height: 440px;
+            .container{
+                height: 440px;
+            }
+        }
+    }
     .login{
         background-image: url(../img/smartphone/fondo-smartphone.png);
         .card{
